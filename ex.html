@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ophirist Ministries</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation Bar */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+    .navbar ul li a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .section-container {
+      padding: 100px 20px 40px; /* account for fixed header */
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .fullpage-view {
+      display: none;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: white;
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      flex-direction: column;
+    }
+    .fullpage-overlay {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.6);
+      inset: 0;
+      z-index: 1;
+    }
+    .fullpage-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
+    }
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo1.jpeg" alt="Logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ministries">About Ministries</a></li>
+        <li><a href="#organizations">Organizations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section-container">
+    <h2>Welcome to Ophir Ministries</h2>
+    <p>Discover the truth through the light of Ophirism</p>
+  </section>
+
+  <!-- Ministries Section -->
+  <section class="section-container" id="ministries">
+    <h2>About Our Ministries</h2>
+    <div class="card-grid">
+      <div class="card" onclick="openFullPage('vision')">
+        <img src="vision.jpg" alt="Vision">
+        <h3>Vision</h3>
+      </div>
+      <div class="card" onclick="openFullPage('faith')">
+        <img src="faith statement.jpg" alt="Faith Statement">
+        <h3>Faith Statement</h3>
+      </div>
+      <div class="card" onclick="openFullPage('apologetics')">
+        <img src="apologetics.jpg" alt="Apologetics">
+        <h3>Apologetics</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations Section -->
+  <section class="section-container" id="organizations">
+    <h2>Our Ministry Organizations</h2>
+    <div class="card-grid">
+      <div class="card" onclick="openFullPage('agape')">
+        <img src="AFG.jpeg" alt="Agape">
+        <h3>Agape Full Gospel</h3>
+      </div>
+      <div class="card" onclick="openFullPage('rkp')">
+        <img src="RKP.jpeg" alt="RKP">
+        <h3>RKP</h3>
+      </div>
+      <div class="card" onclick="openFullPage('ace')">
+        <img src="ACE.jpeg" alt="ACE">
+        <h3>Agape Child Evangelism</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Page View -->
+  <div class="fullpage-view" id="fullpageView">
+    <div class="fullpage-overlay"></div>
+    <div class="fullpage-content" id="fullpageContent"></div>
+    <div class="back-btn" onclick="closeFullPage()">&larr; Back</div>
+  </div>
+
+  <script>
+    const data = {
+      vision: {
+        name: "Vision",
+        logo: "vision.jpg",
+        description: "Ophir Ministries carries a special vision to educate and equip today's church with the essence of scripture and sound doctrine."
+      },
+      faith: {
+        name: "Faith Statement",
+        logo: "faith statement.jpg",
+        description: "We believe in One God, eternally existent in three persons called Father, Son and Holy Spirit."
+      },
+      apologetics: {
+        name: "Apologetics",
+        logo: "apologetics.jpg",
+        description: "Apostle Ophir has been a part of many debates and gives answers based on Vedas, Bible and Quran."
+      },
+      agape: {
+        name: "Agape Full Gospel",
+        logo: "AFG.jpeg",
+        description: "We carry the Good News to remote villages of India, forming Agape Full Gospel Churches."
+      },
+      rkp: {
+        name: "RKP",
+        logo: "RKP.jpeg",
+        description: "Rashtreeya Kraisthava Parishad promotes communal harmony and legal justice for Christians in India."
+      },
+      ace: {
+        name: "Agape Child Evangelism",
+        logo: "ACE.jpeg",
+        description: "We help children come to know Christ early, through ACE clubs and powerful Bible-based teaching."
+      }
+    };
+
+    function openFullPage(key) {
+      const view = document.getElementById("fullpageView");
+      const content = document.getElementById("fullpageContent");
+      const item = data[key];
+
+      view.style.backgroundImage = `url('${item.logo}')`;
+      content.innerHTML = `<h1>${item.name}</h1><p>${item.description}</p>`;
+      view.style.display = "flex";
+    }
+
+    function closeFullPage() {
+      document.getElementById("fullpageView").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

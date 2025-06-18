@@ -1,0 +1,120 @@
+SOC -4 Documentation
+--------------------------------
+
+
+Customer Survey Questions (Website Experience)
+General Experience
+1.	How did you find out about our restaurant website?
+	o	Social Media
+	o	Search Engine
+	o	Word of Mouth
+	o	Other (please specify)
+2.	How would you rate the ease of navigating our website?
+	o	⭐⭐⭐⭐⭐ (Very Easy)
+	o	⭐⭐⭐⭐ (Easy)
+	o	⭐⭐⭐ (Neutral)
+	o	⭐⭐ (Difficult)
+	o	⭐ (Very Difficult)
+3.	What feature of the website did you find most useful?
+	o	Online Reservations
+	o	Menu Preview
+	o	Special Offers Section
+	o	Location & Contact Info
+	o	Testimonials
+Online Reservations 4. Did you use the online reservation system?
+	•	Yes
+	•	No
+5.	If yes, how would you rate the reservation process?
+	o	⭐⭐⭐⭐⭐ (Very Smooth)
+	o	⭐⭐⭐⭐ (Smooth)
+	o	⭐⭐⭐ (Neutral)
+	o	⭐⭐ (Difficult)
+	o	⭐ (Very Difficult)
+6.	What improvements would you suggest for the reservation system?
+Menu & Food Choices 7. How helpful was the menu preview in deciding what to order?
+	•	⭐⭐⭐⭐⭐ (Very Helpful)
+	•	⭐⭐⭐⭐ (Helpful)
+	•	⭐⭐⭐ (Neutral)
+	•	⭐⭐ (Not Helpful)
+	•	⭐ (Not Helpful at All)
+8.	Did you find the pricing information clear and transparent? 
+	o	Yes
+	o	No
+Design & Usability 9. How visually appealing did you find the website?
+	•	⭐⭐⭐⭐⭐ (Very Appealing)
+	•	⭐⭐⭐⭐ (Appealing)
+	•	⭐⭐⭐ (Neutral)
+	•	⭐⭐ (Not Appealing)
+	•	⭐ (Poor Design)
+10.	Did the images on the website help in understanding the restaurant’s ambiance and offerings?
+	•	Yes
+	•	No
+Special Offers & Promotions 11. Did you notice the special offers section?
+	•	Yes
+	•	No
+12.	If yes, did any special offer influence your decision to dine with us?
+	•	Yes
+	•	No
+Final Feedback 13. What would you improve about our website?
+________________________________________
+
+Customer Survey Questions (Restaurant Experience)
+Dining Experience
+1.	How would you rate your overall dining experience at our restaurant?
+	o	⭐⭐⭐⭐⭐ (Excellent)
+	o	⭐⭐⭐⭐ (Good)
+	o	⭐⭐⭐ (Neutral)
+	o	⭐⭐ (Fair)
+	o	⭐ (Poor)
+2.	How satisfied were you with the quality of the food?
+	o	Very Satisfied
+	o	Satisfied
+	o	Neutral
+	o	Dissatisfied
+	o	Very Dissatisfied
+3.	How would you rate the variety of menu options?
+	o	Excellent
+	o	Good
+	o	Neutral
+	o	Limited
+	o	Poor
+4.	Did you find the portion sizes appropriate for the price?
+	o	Yes, perfect
+	o	Too small
+	o	Too large
+	o	Not worth the price
+Service & Atmosphere 5. How would you rate the friendliness and attentiveness of our staff?
+	•	⭐⭐⭐⭐⭐ (Excellent)
+	•	⭐⭐⭐⭐ (Good)
+	•	⭐⭐⭐ (Neutral)
+	•	⭐⭐ (Needs Improvement)
+	•	⭐ (Poor)
+6.	How was the cleanliness of the restaurant?
+	o	Very Clean
+	o	Clean
+	o	Neutral
+	o	Needs Improvement
+	o	Not Clean
+7.	How would you describe the restaurant’s ambiance?
+	o	Cozy & Inviting
+	o	Modern & Stylish
+	o	Casual & Relaxed
+	o	Noisy & Crowded
+	o	Dull & Unimpressive
+Value & Pricing 8. How do you feel about our pricing compared to the quality of food and service?
+	•	Very Reasonable
+	•	Reasonable
+	•	Neutral
+	•	Slightly Expensive
+	•	Overpriced
+9.	Did you find our special offers and promotions valuable? 
+	o	Yes
+	o	No
+	o	Didn’t notice any offers
+Final Feedback 10. What was the most memorable part of your visit?
+11. Would you recommend our restaurant to others?
+	- Yes
+	- No
+12. Any additional comments or suggestions?
+
+ 
